@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/servo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Servo1:"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/servo_name"
+        android:layout_marginTop="20dp"
+        android:max="90"
+        android:progress="15"
+        android:indeterminate="false" />
+
+    <TextView
+        android:id="@+id/graduation_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:text="90"
+        android:textStyle="bold"
+        android:layout_marginRight="13dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/graduation_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:text="0"
+        android:textStyle="bold"
+        android:layout_marginLeft="13dp"/>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:id="@+id/textView"
+        android:layout_below="@+id/graduation_start"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp"
+        android:layout_alignRight="@+id/seekBar"
+        android:layout_alignEnd="@+id/seekBar"
+        android:gravity="center" />-->
+
+
+</RelativeLayout>
